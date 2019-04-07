@@ -152,27 +152,30 @@
           <div id="js-content" class="content-ll">
             
   
-    <article id="post-单单无敌666" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+    <article id="post-浅谈盲水印那些事" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2019/03/19/单单无敌666/">单单无敌666</a>
+      <a class="article-title" href="/2019/03/19/浅谈盲水印那些事/">浅谈盲水印的那些事儿</a>
     </h1>
   
 
         
-        <a href="/2019/03/19/单单无敌666/" class="archive-article-date">
-  	<time datetime="2019-03-19T11:55:32.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-03-19</time>
+        <a href="/2019/03/19/浅谈盲水印那些事/" class="archive-article-date">
+  	<time datetime="2019-03-19T11:55:32.356Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-03-19</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        
+        <p>首先，开演之际，关于盲水印的概念，我们还是需要了解一下的。<br>水印，一般是指图片上印有文字的水印，比如发表在微博或者CSDN的图片都会自动打上肉眼可见的文字水印。像这种一般用于标识某张图片的出处或者用于声明版权。但是这样做会破坏掉原图，而且影响美观，比较粗暴。<br>盲水印不仅仅用于图片，也可应用于像音频这种数据流。当然这篇文章只讨论图片上的应用。盲水印隐蔽性强，给水印数据进行编码过后不易被破解出来。</p>
+<p>##盲水印的原理</p>
+<p>盲水印就是在图像的频域上添加水印数据。再通过逆变换转回时域。区别是图片是二维数据，要把图片数据由时域转到频域需要用到二维傅立叶变换，傅立叶变换可以把数据从时域转换到频域。而且过程可逆。<br><img src="D:\blog2\source\_posts/101.png" alt="img"></p>
+
       
 
       
@@ -184,7 +187,7 @@
 
       
         <p class="article-more-link">
-          <a class="article-more-a" href="/2019/03/19/单单无敌666/">展开全文 >></a>
+          <a class="article-more-a" href="/2019/03/19/浅谈盲水印那些事/">展开全文 >></a>
         </p>
       
 
@@ -217,24 +220,10 @@
     <article id="post-hello-world" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2019/03/19/hello-world/">Hello World</a>
-    </h1>
-  
-
-        
-        <a href="/2019/03/19/hello-world/" class="archive-article-date">
-  	<time datetime="2019-03-19T01:43:47.655Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-03-19</time>
-</a>
-        
-      </header>
-    
     <div class="article-entry" itemprop="articleBody">
       
-        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
+        <hr>
+<h2 id="Hello-World"><a href="#Hello-World" class="headerlink" title="Hello,World!"></a>Hello,World!</h2><p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
 <h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
 <p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
 <h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
