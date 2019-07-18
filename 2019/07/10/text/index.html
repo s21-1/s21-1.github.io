@@ -6,20 +6,21 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>浅谈盲水印的那些事 | 再次刷新，从零开始的异世界生活</title>
+  <title>关于对python的初步学习（求导） | 再次刷新，从零开始的异世界生活</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="首先，开演之际，关于盲水印的概念，我们还是需要了解一下的。水印，一般是指图片上印有文字的水印，比如发表在微博或者CSDN的图片都会自动打上肉眼可见的文字水印。像这种一般用于标识某张图片的出处或者用于声明版权。但是这样做会破坏掉原图，而且影响美观，比较粗暴。盲水印不仅仅用于图片，也可应用于像音频这种数据流。当然这篇文章只讨论图片上的应用。盲水印隐蔽性强，给水印数据进行编码过后不易被破解出来。 ##盲">
+  <meta name="description" content="首先，开演之际，一切从零做起，果然还是需要把python及其相关组件装起来的1$ 链接：https://pan.baidu.com/s/16Lyji2y3lHQU6vhZP2dWrA   提取码：0qfl 上面这个链接内含有python2.7、python3.7安装包，PyCharm安装包至于PyCharm的激活码，参考大佬CSDN1https://blog.csdn.net/weixin_436">
+<meta name="keywords" content="python 函数求导 初学者">
 <meta property="og:type" content="article">
-<meta property="og:title" content="浅谈盲水印的那些事">
+<meta property="og:title" content="关于对python的初步学习（求导）">
 <meta property="og:url" content="http://yoursite.com/2019/07/10/text/index.html">
 <meta property="og:site_name" content="再次刷新，从零开始的异世界生活">
-<meta property="og:description" content="首先，开演之际，关于盲水印的概念，我们还是需要了解一下的。水印，一般是指图片上印有文字的水印，比如发表在微博或者CSDN的图片都会自动打上肉眼可见的文字水印。像这种一般用于标识某张图片的出处或者用于声明版权。但是这样做会破坏掉原图，而且影响美观，比较粗暴。盲水印不仅仅用于图片，也可应用于像音频这种数据流。当然这篇文章只讨论图片上的应用。盲水印隐蔽性强，给水印数据进行编码过后不易被破解出来。 ##盲">
+<meta property="og:description" content="首先，开演之际，一切从零做起，果然还是需要把python及其相关组件装起来的1$ 链接：https://pan.baidu.com/s/16Lyji2y3lHQU6vhZP2dWrA   提取码：0qfl 上面这个链接内含有python2.7、python3.7安装包，PyCharm安装包至于PyCharm的激活码，参考大佬CSDN1https://blog.csdn.net/weixin_436">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="http://yoursite.com/2019/07/10/text/blog2/source/_posts/text/101.png">
-<meta property="og:updated_time" content="2019-07-18T09:54:07.499Z">
+<meta property="og:updated_time" content="2019-07-18T12:36:04.956Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="浅谈盲水印的那些事">
-<meta name="twitter:description" content="首先，开演之际，关于盲水印的概念，我们还是需要了解一下的。水印，一般是指图片上印有文字的水印，比如发表在微博或者CSDN的图片都会自动打上肉眼可见的文字水印。像这种一般用于标识某张图片的出处或者用于声明版权。但是这样做会破坏掉原图，而且影响美观，比较粗暴。盲水印不仅仅用于图片，也可应用于像音频这种数据流。当然这篇文章只讨论图片上的应用。盲水印隐蔽性强，给水印数据进行编码过后不易被破解出来。 ##盲">
+<meta name="twitter:title" content="关于对python的初步学习（求导）">
+<meta name="twitter:description" content="首先，开演之际，一切从零做起，果然还是需要把python及其相关组件装起来的1$ 链接：https://pan.baidu.com/s/16Lyji2y3lHQU6vhZP2dWrA   提取码：0qfl 上面这个链接内含有python2.7、python3.7安装包，PyCharm安装包至于PyCharm的激活码，参考大佬CSDN1https://blog.csdn.net/weixin_436">
 <meta name="twitter:image" content="http://yoursite.com/2019/07/10/text/blog2/source/_posts/text/101.png">
   
     <link rel="alternative" href="/atom.xml" title="再次刷新，从零开始的异世界生活" type="application/atom+xml">
@@ -163,7 +164,7 @@
         
   
     <h1 class="article-title" itemprop="name">
-      浅谈盲水印的那些事
+      关于对python的初步学习（求导）
     </h1>
   
 
@@ -176,9 +177,10 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>首先，开演之际，关于盲水印的概念，我们还是需要了解一下的。<br>水印，一般是指图片上印有文字的水印，比如发表在微博或者CSDN的图片都会自动打上肉眼可见的文字水印。像这种一般用于标识某张图片的出处或者用于声明版权。但是这样做会破坏掉原图，而且影响美观，比较粗暴。<br>盲水印不仅仅用于图片，也可应用于像音频这种数据流。当然这篇文章只讨论图片上的应用。盲水印隐蔽性强，给水印数据进行编码过后不易被破解出来。</p>
-<p>##盲水印的原理</p>
-<p>盲水印就是在图像的频域上添加水印数据。再通过逆变换转回时域。区别是图片是二维数据，要把图片数据由时域转到频域需要用到二维傅立叶变换，傅立叶变换可以把数据从时域转换到频域。而且过程可逆。<br><img src="/2019/07/10/text/blog2\source\_posts\text/101.png" alt="图1"></p>
+        <p>首先，开演之际，一切从零做起，果然还是需要把python及其相关组件装起来的<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ 链接：https://pan.baidu.com/s/16Lyji2y3lHQU6vhZP2dWrA   提取码：0qfl</span><br></pre></td></tr></table></figure></p>
+<p>上面这个链接内含有python2.7、python3.7安装包，PyCharm安装包<br>至于PyCharm的激活码，参考大佬CSDN<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">https://blog.csdn.net/weixin_43641304/article/details/87071864</span><br></pre></td></tr></table></figure></p>
+<p>安装过程比较傻瓜式，最后需要注册码时再复制粘贴就行，这里不再赘述<br>顺带一提，想正常运行PyCharm，最好两个版本的python都先装电脑上（安装位置都随意，最好自己知道在哪）</p>
+<h2 id="关于python的求导"><a href="#关于python的求导" class="headerlink" title="关于python的求导"></a>关于python的求导</h2><p>求函数导数有有一个方便的方法是运用SciPy求函数的导数<br>顺带一提，很多小伙伴第一次搞python时应该有很多moudle还没有，那咱们只能下载了<br>盲水印就是在图像的频域上添加水印数据。再通过逆变换转回时域。区别是图片是二维数据，要把图片数据由时域转到频域需要用到二维傅立叶变换，傅立叶变换可以把数据从时域转换到频域。而且过程可逆。<br><img src="/2019/07/10/text/blog2\source\_posts\text\101.png" alt="图1"></p>
 
       
 
@@ -208,6 +210,17 @@
     <div class="article-info article-info-index">
       
       
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">python 函数求导 初学者</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
       
 
       
@@ -270,6 +283,25 @@
 </article>
 
   
+<nav id="article-nav">
+  
+    <a href="/2019/07/18/盲水印/" id="article-nav-newer" class="article-nav-link-wrap">
+      <i class="icon-circle-left"></i>
+      <div class="article-nav-title">
+        
+          盲水印
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2019/04/07/post浅谈盲水印那些事/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">post浅谈盲水印那些事</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
 
 <aside class="wrap-side-operation">
     <div class="mod-side-operation">
@@ -388,6 +420,10 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
             <input type="checkbox" q-on="click:toggleTag(e)" q-attr="checked:showTags">
           </label>
           <ul class="article-tag-list" q-show="showTags">
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">python 函数求导 初学者</a>
+              </li>
             
             <div class="clearfix"></div>
           </ul>
